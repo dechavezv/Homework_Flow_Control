@@ -7,8 +7,8 @@ In [30]: for line in exon_locations:
 190,276
 340,398
 
-In [30]: exon_locations = open("exons.txt")
-In [30]: for line in exon_locations:
+In [31]: exon_locations = open("exons.txt")
+In [32]: for line in exon_locations:
     ...: positions = line.split(',')
     ...: print(positions)
     
@@ -17,8 +17,8 @@ In [30]: for line in exon_locations:
 ['190', '276\n']
 ['340', '398\n']
 
-In [30]: exon_locations = open("exons.txt")
-In [30]: for line in exon_locations:
+In [33]: exon_locations = open("exons.txt")
+In [34]: for line in exon_locations:
     ...: positions = line.split(',')
     ...: start = positions[0]
     ...: stop = positions[1]
