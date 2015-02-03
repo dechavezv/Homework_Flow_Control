@@ -1,0 +1,51 @@
+genomic_dna = open("genomic_dna.txt").read()
+exon_locations = open("exons.txt")
+for line in exon_locations:
+    positions = line.split(',')
+    start = positions[0]
+    stop = positions[1]
+    exon = genomic_dna[start:stop]
+    print("exon is: " + exon)
+    
+start = int(positions[0])
+stop = int(positions[1])
+coding_seq = exon1 + exon2 + exon3 + exon4
+genomic_dna = open("genomic_dna.txt").read()
+
+genomic_dna = open("genomic_dna.txt").read()
+exon_locations = open("exons.txt")
+for line in exon_locations:
+    positions = line.split(',')
+    start = positions[0]
+    stop = positions[1]
+    exon = genomic_dna[start:stop]
+    print("coding sequence is : " + coding_sequence)
+    
+coding sequence is : CGTACCGTCGACGATGCTACGATCGTCGATCGTAGTCGATCATCGATCGATCG
+coding sequence is :
+CGTACCGTCGACGATGCTACGATCGTCGATCGTAGTCGATCATCGATCGATCGCGATCGATCGATATCGATCGA
+TATCATCGATGCATCGATCATCGATCGATCGATCGATCGA
+coding sequence is :
+CGTACCGTCGACGATGCTACGATCGTCGATCGTAGTCGATCATCGATCGATCGCGATCGATCGATATCGATCGA
+TATCATCGATGCATCGATCATCGATCGATCGATCGATCGACGATCGATCGATCGTAGCTAGCTAGCTAGATCGA
+TCATCATCGTAGCTAGCTCGACTAGCTACGTACGATCGATGCATCGATCGTA
+coding sequence is :
+CGTACCGTCGACGATGCTACGATCGTCGATCGTAGTCGATCATCGATCGATCGCGATCGATCGATATCGATCGA
+TATCATCGATGCATCGATCATCGATCGATCGATCGATCGACGATCGATCGATCGTAGCTAGCTAGCTAGATCGA
+TCATCATCGTAGCTAGCTCGACTAGCTACGTACGATCGATGCATCGATCGTACGATCGATCGATCGATCGATCG
+ATCGATCGATCGATCGATCGTAGCTAGCTACGATCG
+
+# lets save the coding sequence to a file
+exon_locations = open("exons.txt")
+coding_sequence = ""
+for line in exon_locations:
+
+    positions = line.split(',')
+    start = int(positions[0])
+    stop = int(positions[1])
+    exon = genomic_dna[start:stop]
+    coding_sequence = coding_sequence + exon
+    
+output = open("coding_sequence.txt", "w")
+output.write(coding_sequence)
+output.close()
