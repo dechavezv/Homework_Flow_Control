@@ -1,0 +1,30 @@
+In [29]: exon_locations = open("exons.txt")
+In [30]: for line in exon_locations:
+    ...: print(line)
+
+5,58
+72,133
+190,276
+340,398
+
+In [30]: exon_locations = open("exons.txt")
+In [30]: for line in exon_locations:
+    ...: positions = line.split(',')
+    ...: print(positions)
+    
+['5', '58\n']
+['72', '133\n']
+['190', '276\n']
+['340', '398\n']
+
+In [30]: exon_locations = open("exons.txt")
+In [30]: for line in exon_locations:
+    ...: positions = line.split(',')
+    ...: start = positions[0]
+    ...: stop = positions[1]
+    ...: print("start is " + start + ", stop is " + stop)
+    
+start is 5, stop is 58
+start is 72, stop is 133
+start is 190, stop is 276
+start is 340, stop is 398
